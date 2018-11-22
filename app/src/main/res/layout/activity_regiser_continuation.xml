@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#07232f"
+    tools:context="capstone.abang.com.Register.RegisterContinuationActivity">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary ID:"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="97dp"
+                android:id="@+id/imgViewNbi"
+                android:background="@drawable/photo"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:id="@+id/btnNBI"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/camera2"
+                android:layout_alignEnd="@+id/imgViewNbi"
+                android:layout_alignBottom="@+id/imgViewNbi"
+                android:contentDescription="@string/regcontent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secondary ID:"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="97dp"
+                android:id="@+id/imgViewSecondId"
+                android:background="@drawable/photo"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageButton
+                android:id="@+id/btnSecondaryID"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="75dp"
+                android:background="@drawable/camera2"
+                android:layout_alignEnd="@+id/imgViewSecondId"
+                android:layout_alignBottom="@+id/imgViewSecondId"
+                android:contentDescription="@string/regcontent"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#2bb2a4"
+            android:text="Register"
+            android:id="@+id/btnRegContinuation"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="normal"/>
+    </RelativeLayout>
+</LinearLayout>

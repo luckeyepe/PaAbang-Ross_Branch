@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MultimagerTheme.AppBarOverlay">
+
+            <include layout="@layout/toolbar"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ContentRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:text="Required Documents"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_ORCR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvORCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="* OR / CR" />
+
+
+            <ImageButton
+                android:id="@+id/btnORCR"
+                android:layout_width="130dp"
+                android:layout_height="97dp"
+                android:layout_below="@id/tvORCR"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/take_photo" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_GARAGE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ORCR"
+            android:background="@color/white"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvGARAGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* LTFRB"
+                android:layout_marginStart="15dp"/>
+
+
+            <ImageButton
+                android:id="@+id/btnLTFRB"
+                android:layout_width="130dp"
+                android:layout_height="97dp"
+                android:layout_below="@id/tvGARAGE"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/take_photo" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_Airport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_GARAGE"
+                android:background="@color/white"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvAirport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Airport"
+                    android:layout_marginStart="15dp"/>
+
+
+                <ImageButton
+                    android:id="@+id/btnAirport"
+                    android:layout_width="130dp"
+                    android:layout_height="97dp"
+                    android:layout_below="@id/tvAirport"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/take_photo" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+            <Button
+                android:id="@+id/btnEnroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#2bb2a4"
+                android:text="Enroll Car"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

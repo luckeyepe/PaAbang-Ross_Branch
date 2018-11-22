@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="schemas.android.com/tools">
+    <color name="themeColor">#07232F</color>
+    <color name="statusBarColor">#07232F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#50a3ec</color>
+    <color name="black">#000000</color>
+    <color name="custom_progress_bg_color">#EEEEEE</color>
+    <color name="custom_progress_message_color">#6D6D6D</color>
+    <color name="image_selected" tools:override="true">#96dde238</color>
+
+    <color name="testThemeColor">#e98f6c</color>
+    <color name="testStatusBarColor">#c73030</color>
+
+
+    <color name="tool_bg" tools:override="true">#07232f</color>
+    <color name="Foreground" tools:override="true">#ff6271d8</color>
+    <color name="Banner">#f5f5f5</color>
+    <color name="GalleryBackground">#dcdcdc</color>
+    <color name="btnText" tools:override="true">#000000</color>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#081e27"
+    tools:context="capstone.abang.com.Register.SplashActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:id="@+id/imgViewLogo"
+        android:src="@drawable/imagelogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Owner"
+        android:id="@+id/text1"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/text2"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Please upload necessary file to complete
+registration"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

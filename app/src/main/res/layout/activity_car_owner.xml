@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="capstone.abang.com.Car_Owner.car_owner">
+    <include layout="@layout/layout_center_viewpager" />
+
+    <include layout="@layout/layout_bottom_navigation_view" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/endorseFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="21dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:fabSize="auto"
+        app:elevation="4dp"
+        app:srcCompat="@drawable/shutter" />
+</android.support.design.widget.CoordinatorLayout>
+
+

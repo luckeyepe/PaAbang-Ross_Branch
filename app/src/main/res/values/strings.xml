@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Abang</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logo">Abang</string>
+    <string name="contextDesc">Abang Logo</string>
+    <string name="forgot">Forgot Password?</string>
+
+    //Registration
+    <string name="regusername">Username</string>
+    <string name="regpassword">Password</string>
+    <string name="regemail">Email</string>
+    <string name="regfullname">Full Name</string>
+    <string name="regaddress">Address</string>
+    <string name="regcontact">Contact Number</string>
+    <string name="regcontent">Profile Pic</string>
+
+
+    //Fragments
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="sign_out_fragment">Sign Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="select_category">Select a Category</string>
+    <string name="title_activity_home">Map</string>
+
+    <string name="google_direction_api">AIzaSyAiZR_9VP01mk5BXCVLyodlpq9fAb_fs88</string>
+</resources>

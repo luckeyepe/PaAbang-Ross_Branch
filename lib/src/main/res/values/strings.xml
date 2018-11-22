@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Multimager</string>
+    <string name="GalleryTextBanner">Choose up to 4 photos</string>
+    <item name="image_id" type="id" />
+</resources>

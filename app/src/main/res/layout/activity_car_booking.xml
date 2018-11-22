@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="capstone.abang.com.Car_Renter.Home.CarBookingActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MultimagerTheme.AppBarOverlay">
+
+            <include layout="@layout/toolbar"/>
+        </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/viewpager">
+
+                </android.support.v4.view.ViewPager>
+                <LinearLayout
+                    android:id="@+id/sliderdots"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_alignBottom="@+id/viewpager"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maker Model Year"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:id="@+id/textviewcarname"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maker Model Year"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_clock"
+                    android:drawablePadding="5dp"
+                    android:layout_marginStart="3dp"
+                    android:id="@+id/textviewpostedon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maker Model Year"
+                    android:textSize="17sp"
+                    android:drawableStart="@drawable/ic_contact"
+                    android:drawablePadding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/textviewcontact"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="15dp"
+                android:background="#9da0a1"/>
+
+            <LinearLayout
+                android:id="@+id/Linear9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="* Service Type"
+                    android:paddingTop="5dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerservices"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/layoutFromTo">
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="From"
+                        android:drawableStart="@drawable/ic_loc"
+                        android:drawablePadding="5dp"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"/>
+                    <Spinner
+                        android:id="@+id/spinnerstartdestination"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+
+                    </Spinner>
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="To"
+                        android:id="@+id/searchEditText"
+                        android:padding="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:drawableStart="@drawable/ic_loc"
+                        android:drawablePadding="5dp"
+                        android:imeOptions="actionSearch"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/layoutOnewayServices"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="* From"
+                        android:id="@+id/textfromone"
+                        android:paddingTop="5dp"/>
+                    <Spinner
+                        android:id="@+id/spinneroneway"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textto"
+                        android:text="* To"
+                        android:paddingTop="5dp"/>
+                    <Spinner
+                        android:id="@+id/spinneronewayend"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:id="@+id/dateheaderlayout"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="* Start Date"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="* End Date"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/layoutSpan"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/startDate"
+                        android:text="Start Date"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/calendar"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/endDate"
+                        android:text="End Date"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/calendar"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:id="@+id/scheduleheader"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="* Start Date"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="* Time"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:visibility="gone"
+                    android:background="@color/white"
+                    android:id="@+id/scheduledetails">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/withDriverDate"
+                        android:text="Start Date"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/calendar"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/withDriverTime"
+                        android:text="Time"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/ic_clock"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/layoutServiceMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="* Service Mode"
+                            android:paddingTop="5dp"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="60dp"
+                            android:id="@+id/ServiceMode">
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Round Trip"
+                                android:id="@+id/RoundTrip"
+                                android:layout_weight="1"
+                                android:textColor="#768187" />
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Drop Off"
+                                android:layout_weight="1"
+                                android:id="@+id/DropOff"
+                                android:textColor="#768187"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutDelivery"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="* Delivery Mode"
+                            android:paddingTop="5dp"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="60dp"
+                            android:id="@+id/ServiceAdd">
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pick Up"
+                                android:id="@+id/PickUp"
+                                android:layout_weight="1"
+                                android:textColor="#768187" />
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Deliver"
+                                android:layout_weight="1"
+                                android:id="@+id/Deliver"
+                                android:textColor="#768187"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/layouttours">
+                    <Spinner
+                        android:id="@+id/spinnertours"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+                    </Spinner>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:textSize="17sp"
+                        android:drawableStart="@drawable/ic_price"
+                        android:drawablePadding="5dp"
+                        android:layout_marginStart="3dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:id="@+id/textPrice"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edit_text"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Excess Hour"
+                        android:textSize="17sp"
+                        android:drawableStart="@drawable/ic_clock"
+                        android:drawablePadding="5dp"
+                        android:layout_marginStart="3dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:id="@+id/textExcess"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edit_text"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layouttotal"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/layoutFrom">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_price"
+                        android:drawablePadding="5dp"
+                        android:layout_marginStart="3dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:id="@+id/textTotal"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_edit_text"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/SelfDriveRequirements">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Self Drive Requirements"
+                    android:gravity="center"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Driver's License"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2. Full Rental Payment"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="15dp"
+                            android:background="#9da0a1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Philippine Resident"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* 2 other Valid Identification Card"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* Original Proof of Billing"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="15dp"
+                            android:background="#9da0a1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Foreign Resident"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="* Passport"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginStart="15dp"
+                            android:background="#9da0a1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Note: Requirements will be collected on delivery  date. Lacking requirement will forfeit your reservation"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewTermsBtn"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="View Terms"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/downloadTermsBtn"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Download Terms"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_button"
+                    />
+            </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/reservebtn"
+                    android:layout_height="wrap_content"
+                    android:text="Send Request"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rounded_button"
+                    />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

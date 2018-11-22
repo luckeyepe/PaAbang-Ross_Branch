@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="capstone.abang.com.Car_Owner.Endorse.BasicDetails">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MultimagerTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/Linear1"
+       android:orientation="vertical"
+      >
+       <TextView
+           android:layout_marginStart="20dp"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:text="* Maker" />
+
+       <EditText
+           android:id="@+id/etMaker"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+           android:background="@android:color/transparent"
+           android:drawablePadding="12dp"
+           android:ems="10"
+           android:hint="Toyota"
+           android:inputType="text"
+           android:padding="2dp"
+           android:maxLines="1"
+           android:textColor="#768187"
+           android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear1"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+        <LinearLayout
+            android:id="@+id/Linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear1"
+            android:orientation="vertical"
+          >
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="* Model"/>
+
+            <EditText
+                android:id="@+id/etModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Fortuner"
+                android:inputType="text"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:textColor="#768187"
+                android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear2"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+        <LinearLayout
+            android:id="@+id/Linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear2"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="* Year"/>
+
+            <EditText
+                android:id="@+id/etYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="2018"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#768187"
+                android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear3"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+
+        <LinearLayout
+            android:id="@+id/Linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear3"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="* Plate Number"/>
+
+            <EditText
+                android:id="@+id/etPlateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="A2 452C"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#768187"
+                android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear4"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+        <LinearLayout
+            android:id="@+id/Linear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear4"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="* Max Capacity"/>
+
+            <EditText
+                android:id="@+id/etCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="7"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#768187"
+                android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear5"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+        <LinearLayout
+            android:id="@+id/Linear6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear5"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="* Chassis Number / VIN"/>
+
+            <EditText
+                android:id="@+id/etChassisNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="52CSD52DS"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#768187"
+                android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear6"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+
+        <LinearLayout
+            android:id="@+id/Linear7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear6"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="* Engine Number"/>
+
+            <EditText
+                android:id="@+id/etEngineNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="0000343"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#768187"
+                android:textColorHint="@color/gray_light" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/Linear7"
+            android:layout_marginLeft="25dp"
+            android:background="#e8e3e3"/>
+
+        <LinearLayout
+            android:id="@+id/Linear8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Linear7"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="* Transmission"
+                android:paddingTop="5dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/Transmission">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Automatic"
+                    android:id="@+id/radioAutomatic"
+                    android:textColor="#768187" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manual"
+                    android:id="@+id/radioManual"
+                    android:textColor="#768187"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/RelLayout1"
+        android:background="@color/white">
+
+
+
+
+
+    </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+

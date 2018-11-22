@@ -1,0 +1,53 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/renterhometoolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Abang"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/textView" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/btnNotif"
+                    android:src="@drawable/notification"/>
+
+                <ImageView
+                    android:id="@+id/inboxBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_marginEnd="11dp"
+                    android:layout_toStartOf="@+id/btnNotif"
+                    android:src="@drawable/ic_message_gray" />
+                <TextView
+                    android:textSize="10sp"
+                    android:id="@+id/notif_badge"
+                    android:layout_alignRight="@+id/btnNotif"
+                    android:layout_alignTop="@+id/btnNotif"
+                    android:gravity="center"
+                    android:background="@drawable/oval_red"
+                    android:textColor="#ffffff"
+                    android:text="0"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</merge>

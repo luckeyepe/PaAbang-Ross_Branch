@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Basic Information"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/eteditusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:drawableStart="@drawable/person"
+                    android:ems="10"
+                    android:hint="@string/regusername"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    android:textColor="#768187"
+                    android:textColorHint="#768187" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="#c5c5c6" />
+
+                <EditText
+                    android:id="@+id/eteditfullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/name"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/regfullname"
+                    android:inputType="textPersonName"
+                    android:textColor="#768187"
+                    android:textColorHint="#768187" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="#c5c5c6"/>
+
+                <EditText
+                    android:id="@+id/eteditaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:drawableStart="@drawable/loc"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/regaddress"
+                    android:inputType="text"
+                    android:textColor="#768187"
+                    android:textColorHint="#768187" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="#c5c5c6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Contact Details"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <EditText
+                    android:id="@+id/eteditcontactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/contact"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/regcontact"
+                    android:inputType="number"
+                    android:textColor="#768187"
+                    android:textColorHint="#768187" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="#c5c5c6"/>
+
+                <EditText
+                    android:id="@+id/eteditcontactemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:textSize="16sp"
+                    android:hint="@string/regemail"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#768187"
+                    android:textColorHint="#768187" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="#c5c5c6"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</merge>

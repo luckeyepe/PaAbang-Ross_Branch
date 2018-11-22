@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/notif_model_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardviewnotif">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/notif_car_image"
+                    android:src="@drawable/imagelogo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+
+                <TextView
+                    android:paddingLeft="5sp"
+                    android:id="@+id/notif_message"
+                    android:layout_toRightOf="@+id/notif_car_image"
+                    android:text="acc/dec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingLeft="5sp"
+                android:textSize="10sp"
+                android:id="@+id/notif_date"
+                android:layout_toRightOf="@+id/notif_car_image"
+                android:layout_alignParentBottom="true"
+                android:text="date rcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="10sp"
+                android:id="@+id/notif_seen"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="seen/unseen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

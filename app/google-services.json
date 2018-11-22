@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "768430199374",
+    "firebase_url": "https://abang-application.firebaseio.com",
+    "project_id": "abang-application",
+    "storage_bucket": "abang-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768430199374:android:7d34bcecd0f3ccf6",
+        "android_client_info": {
+          "package_name": "capstone.abang.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768430199374-1fjj1s85q2u1d4c86nhrvm0utedqpsec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "capstone.abang.com",
+            "certificate_hash": "61b73bc028b69feaa86ec4016cc3c8c829cb5af4"
+          }
+        },
+        {
+          "client_id": "768430199374-a8n5fn74cccj0ptlurqk5logv59hmd06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9YHcvPcH2SKWLmGaWl-k8MbJMPDLCRZA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768430199374-a8n5fn74cccj0ptlurqk5logv59hmd06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
